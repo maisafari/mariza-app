@@ -34,9 +34,9 @@ export default function Home() {
             <strong>full-stack development</strong> using <strong>Java</strong>, <strong>Python</strong>, and <strong>JavaScript</strong>.
           </p>
           <p className="text-base leading-relaxed mt-4">
-            I've worked across industries including <strong>finance</strong>, <strong>telecommunications</strong>, and 
+            I&apos;ve worked across industries including <strong>finance</strong>, <strong>telecommunications</strong>, and 
             <strong>utilities</strong>, consistently delivering high-quality solutions in <strong>Agile environments</strong>. 
-            I’m passionate about <strong>mentorship</strong>, clean code, and continuous learning.
+            I&apos;m passionate about <strong>mentorship</strong>, clean code, and continuous learning.
           </p>
           <p className="text-base leading-relaxed text-gray-600 mt-4 italic">
             This portfolio is currently a work in progress, designed to showcase my skills and projects as I continue growing as a developer. 
