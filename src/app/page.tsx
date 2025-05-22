@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -11,33 +12,61 @@ export default function Home() {
           <a
             key={id}
             href={`#${id}`}
-            className="hover:text-blue-600 cursor-pointer uppercase font-semibold"
+            className="hover:text-indigo-700 cursor-pointer uppercase font-semibold"
           >
             {id}
           </a>
         ))}
       </nav>
 
-      <main className="pt-20 max-w-4xl mx-auto px-4 space-y-32 scroll-smooth">
+      <main className="pt-20 max-w-5xl mx-auto px-8 space-y-24 scroll-smooth">
         {/* About Me */}
-        <section id="about" className="min-h-screen flex flex-col justify-center">
-          <h1 className="text-4xl font-bold mb-6">About Me</h1>
-          <p className="max-w-xl text-lg leading-relaxed">
-            Software Developer with 4 years in QA automation, backend, and cloud systems. Skilled in API testing,
-            CI/CD, and full-stack development with Java, Python, and JavaScript. Experienced across finance, telecom,
-            and utilities, with a strong focus on Agile delivery, mentoring, and continuous improvement.
-          </p>
+        <section
+          id="about"
+          className="min-h-screen grid grid-cols-1 md:grid-cols-[3fr_2fr] items-center gap-12 py-12"
+        >
+          {/* Text section */}
+          <div>
+            <h1 className="text-4xl font-bold mb-6">Hi, I am Mariza</h1>
+            <p className="max-w-xl text-lg leading-relaxed">
+              Software Developer with 4 years in QA automation, backend, and
+              cloud systems. Skilled in API testing, CI/CD, and full-stack
+              development with Java, Python, and JavaScript. Experienced across
+              finance, telecom, and utilities, with a strong focus on Agile
+              delivery, mentoring, and continuous improvement.
+            </p>
+          </div>
+
+          {/* Image section */}
+          <div className="flex justify-center md:justify-end">
+            <Image
+                src="/images/cv_Image.jpg"
+                alt="Profile"
+                width={400}           // base width, used for intrinsic ratio
+                height={400}          // base height
+                className="rounded-2xl shadow-lg object-cover w-3/5 max-w-sm md:max-w-md"
+              />
+          </div>
         </section>
 
         {/* Resume */}
-        <section id="resume" className="min-h-screen flex flex-col justify-center">
+        <section
+          id="resume"
+          className="min-h-screen flex flex-col justify-center bg-white p-10 rounded-lg shadow-md"
+        >
           <h2 className="text-3xl font-bold mb-8">Resume</h2>
 
           <div className="mb-8 space-y-6">
             <h3 className="text-xl font-semibold">Education</h3>
             <ul className="list-disc list-inside">
-              <li>January 2021 — Bachelor in Informatics and Business Management (Ongoing), ISCTE - University Institute of Lisbon, Lisbon</li>
-              <li>Master’s Studies in Electrical Engineering, IST - University Institute of Lisbon, Lisbon (Jan 2010 — Jan 2013)</li>
+              <li>
+                January 2021 — Bachelor in Informatics and Business Management
+                (Ongoing), ISCTE - University Institute of Lisbon, Lisbon
+              </li>
+              <li>
+                Master’s Studies in Electrical Engineering, IST - University
+                Institute of Lisbon, Lisbon (Jan 2010 — Jan 2013)
+              </li>
             </ul>
           </div>
 
@@ -97,18 +126,22 @@ export default function Home() {
               <li>Integrated automation into CI/CD (Jenkins, GitLab, Azure DevOps).</li>
             </ul>
           </div>
-
+        <div className="mb-8 max-w-xs">
           <a
             href="/resume.pdf"
             download
-            className="inline-block bg-blue-600 text-white py-2 px-6 rounded hover:bg-blue-700 transition"
+            className="inline-block bg-blue-600 py-2 px-6 rounded hover:bg-blue-700 transition"
           >
-            Download Resume (PDF)
+            Download Resume (PDF) - Add Functionality
           </a>
+        </div>
         </section>
 
         {/* Blog */}
-        <section id="blog" className="min-h-screen flex flex-col justify-center">
+        <section
+          id="blog"
+          className="min-h-screen flex flex-col justify-center py-12"
+        >
           <h2 className="text-3xl font-bold mb-6">Blog</h2>
           <ul className="space-y-4 list-disc list-inside">
             <li>
@@ -118,7 +151,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline"
               >
-                How I built my first Next.js portfolio
+                How I built my first Next.js portfolio - TO DO 
               </a>
             </li>
             <li>
@@ -128,48 +161,48 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline"
               >
-                Tips for mastering Tailwind CSS
+                QA Tester Tips - TO DO
               </a>
             </li>
             {/* Add more blog posts here */}
           </ul>
         </section>
-
-        {/* Contact */}
-        <section id="contact" className="min-h-screen flex flex-col justify-center">
-          <h2 className="text-3xl font-bold mb-6">Contact Me</h2>
-          <p className="mb-4">
-            Feel free to reach out via email or social media.
-          </p>
-          <p>
-            Email:{" "}
-            <a
-              href="mailto:marizabuntubwimana@gmail.com"
-              className="text-blue-600 hover:underline"
-            >
-              marizabuntubwimana@gmail.com
-            </a>
-          </p>
-          <div className="mt-6 space-x-6">
-            <a
-              href="https://github.com/maisafari"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-800 hover:text-black"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://www.linkedin.com/in/mariza-buntubwimana"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-800 hover:text-black"
-            >
-              LinkedIn
-            </a>
-          </div>
-        </section>
       </main>
+
+      {/* Contact Footer */}
+      <footer
+        id="contact"
+        className="bg-gray-100 text-sm py-6 px-8"
+      >
+        <h2 className="text-xl font-semibold mb-2">Contact Me</h2>
+        <p>
+          Email:{" "}
+          <a
+            href="mailto:marizabuntubwimana@gmail.com"
+            className="hover:underline"
+          >
+            marizabuntubwimana@gmail.com
+          </a>
+        </p>
+        <div className="mt-4 space-x-6">
+          <a
+            href="https://github.com/maisafari"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-black"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mariza-buntubwimana"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-black"
+          >
+            LinkedIn
+          </a>
+        </div>
+      </footer>
     </>
   );
 }
