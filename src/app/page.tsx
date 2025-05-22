@@ -28,7 +28,7 @@ export default function Home() {
         <article className="max-w-xl mx-auto md:mx-0">
           <h1 className="text-3xl font-bold mb-4">Hi, I’m Mariza</h1>
           <p className="text-base leading-relaxed ">
-            I'm a <strong>Software Developer</strong> with <strong>4 years of experience</strong> in 
+            I&apos;m a <strong>Software Developer</strong> with <strong>4 years of experience</strong> in 
             <strong> QA automation</strong>, <strong>backend development</strong>, and <strong>cloud systems</strong>. 
             I specialize in <strong>API testing</strong>, <strong>CI/CD pipelines</strong>, and 
             <strong>full-stack development</strong> using <strong>Java</strong>, <strong>Python</strong>, and <strong>JavaScript</strong>.
