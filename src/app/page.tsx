@@ -113,7 +113,7 @@ export default function Home() {
               <li><strong>Frameworks:</strong> Node.js, React.js</li>
 
               {/* DevOps & Cloud */}
-              <li><strong>Version Control & DevOps:</strong> Git, GitLab, Jenkins</li>
+              <li><strong>Version Control & DevOps:</strong> Git, GitLab, Jenkins, Vercel</li>
               <li><strong>Cloud & Containers:</strong> Docker, AWS</li>
 
               {/* Enterprise Tech */}
