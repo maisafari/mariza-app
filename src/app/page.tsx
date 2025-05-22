@@ -136,8 +136,8 @@ export default function Home() {
             <h3 className="text-xl font-semibold">Education</h3>
             <ul className="list-disc list-inside">
               <li>
-                <strong>Bachelor in Informatics and Business Management</strong>
-                (2022 - Ongoing), ISCTE - University Institute of Lisbon, Lisbon
+                <strong>Bachelor in Informatics and Business Management</strong>, ISCTE - University
+                Institute of Lisbon, Lisbon (2022 - Ongoing)
               </li>
                <li><strong>Java Software Developer</strong>, p Academy - HRB Solutions, Lisbon</li>
               <li>
